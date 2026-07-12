@@ -1,4 +1,9 @@
 # --- azurerm_data_share ---
+output "data_shares_id" {
+  description = "Map of id values across all data_shares, keyed the same as var.data_shares"
+  value       = module.data_shares.data_shares_id
+}
+
 output "data_shares_account_id" {
   description = "Map of account_id values across all data_shares, keyed the same as var.data_shares"
   value       = module.data_shares.data_shares_account_id
@@ -30,6 +35,11 @@ output "data_shares_terms" {
 }
 
 # --- azurerm_data_share_dataset_blob_storage ---
+output "data_share_dataset_blob_storages_id" {
+  description = "Map of id values across all data_share_dataset_blob_storages, keyed the same as var.data_share_dataset_blob_storages"
+  value       = module.data_share_dataset_blob_storages.data_share_dataset_blob_storages_id
+}
+
 output "data_share_dataset_blob_storages_container_name" {
   description = "Map of container_name values across all data_share_dataset_blob_storages, keyed the same as var.data_share_dataset_blob_storages"
   value       = module.data_share_dataset_blob_storages.data_share_dataset_blob_storages_container_name
