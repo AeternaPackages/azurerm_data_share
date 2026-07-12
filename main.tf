@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.data_shares : {
       for k2, v2 in coalesce(v1.data_share_dataset_blob_storages, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_share_id = module.data_shares.data_shares["${k1}"].id
+        data_share_id = module.data_shares.data_shares_id["${k1}"]
       })
     }
   ]...)
