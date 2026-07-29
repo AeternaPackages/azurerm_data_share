@@ -12,12 +12,12 @@ locals {
 }
 
 module "data_shares" {
-  source      = "git::https://github.com/AeternaModules/azurerm_data_share.git?ref=v4.81.0"
+  source      = "git::https://github.com/AeternaModules/azurerm_data_share.git?ref=v5.0.0"
   data_shares = local.data_shares
 }
 
 module "data_share_dataset_blob_storages" {
-  source                           = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_blob_storage.git?ref=v4.81.0"
+  source                           = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_blob_storage.git?ref=v5.0.0"
   data_share_dataset_blob_storages = local.data_share_dataset_blob_storages
   depends_on                       = [module.data_shares]
 }
