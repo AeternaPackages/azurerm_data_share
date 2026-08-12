@@ -75,4 +75,107 @@ output "data_share_dataset_blob_storages_storage_account" {
   value       = module.data_share_dataset_blob_storages.data_share_dataset_blob_storages_storage_account
 }
 
+# --- azurerm_data_share_dataset_data_lake_gen2 ---
+output "data_share_dataset_data_lake_gen2s_id" {
+  description = "Map of id values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_id
+}
+
+output "data_share_dataset_data_lake_gen2s_display_name" {
+  description = "Map of display_name values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_display_name
+}
+
+output "data_share_dataset_data_lake_gen2s_file_path" {
+  description = "Map of file_path values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_file_path
+}
+
+output "data_share_dataset_data_lake_gen2s_file_system_name" {
+  description = "Map of file_system_name values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_file_system_name
+}
+
+output "data_share_dataset_data_lake_gen2s_folder_path" {
+  description = "Map of folder_path values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_folder_path
+}
+
+output "data_share_dataset_data_lake_gen2s_name" {
+  description = "Map of name values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_name
+}
+
+output "data_share_dataset_data_lake_gen2s_share_id" {
+  description = "Map of share_id values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_share_id
+}
+
+output "data_share_dataset_data_lake_gen2s_storage_account_id" {
+  description = "Map of storage_account_id values across all data_share_dataset_data_lake_gen2s, keyed the same as var.data_share_dataset_data_lake_gen2s"
+  value       = module.data_share_dataset_data_lake_gen2s.data_share_dataset_data_lake_gen2s_storage_account_id
+}
+
+# --- azurerm_data_share_dataset_kusto_cluster ---
+output "data_share_dataset_kusto_clusters_id" {
+  description = "Map of id values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_id
+}
+
+output "data_share_dataset_kusto_clusters_display_name" {
+  description = "Map of display_name values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_display_name
+}
+
+output "data_share_dataset_kusto_clusters_kusto_cluster_id" {
+  description = "Map of kusto_cluster_id values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_kusto_cluster_id
+}
+
+output "data_share_dataset_kusto_clusters_kusto_cluster_location" {
+  description = "Map of kusto_cluster_location values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_kusto_cluster_location
+}
+
+output "data_share_dataset_kusto_clusters_name" {
+  description = "Map of name values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_name
+}
+
+output "data_share_dataset_kusto_clusters_share_id" {
+  description = "Map of share_id values across all data_share_dataset_kusto_clusters, keyed the same as var.data_share_dataset_kusto_clusters"
+  value       = module.data_share_dataset_kusto_clusters.data_share_dataset_kusto_clusters_share_id
+}
+
+# --- azurerm_data_share_dataset_kusto_database ---
+output "data_share_dataset_kusto_databases_id" {
+  description = "Map of id values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_id
+}
+
+output "data_share_dataset_kusto_databases_display_name" {
+  description = "Map of display_name values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_display_name
+}
+
+output "data_share_dataset_kusto_databases_kusto_cluster_location" {
+  description = "Map of kusto_cluster_location values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_kusto_cluster_location
+}
+
+output "data_share_dataset_kusto_databases_kusto_database_id" {
+  description = "Map of kusto_database_id values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_kusto_database_id
+}
+
+output "data_share_dataset_kusto_databases_name" {
+  description = "Map of name values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_name
+}
+
+output "data_share_dataset_kusto_databases_share_id" {
+  description = "Map of share_id values across all data_share_dataset_kusto_databases, keyed the same as var.data_share_dataset_kusto_databases"
+  value       = module.data_share_dataset_kusto_databases.data_share_dataset_kusto_databases_share_id
+}
+
 
