@@ -39,30 +39,30 @@ locals {
 }
 
 module "data_shares" {
-  source      = "git::https://github.com/AeternaModules/azurerm_data_share.git?ref=v5.0.0"
+  source      = "git::https://github.com/AeternaModules/azurerm_data_share.git?ref=v5.0.1"
   data_shares = local.data_shares
 }
 
 module "data_share_dataset_blob_storages" {
-  source                           = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_blob_storage.git?ref=v5.0.0"
+  source                           = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_blob_storage.git?ref=v5.0.1"
   data_share_dataset_blob_storages = local.data_share_dataset_blob_storages
   depends_on                       = [module.data_shares]
 }
 
 module "data_share_dataset_data_lake_gen2s" {
-  source                             = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_data_lake_gen2.git?ref=v5.0.0"
+  source                             = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_data_lake_gen2.git?ref=v5.0.1"
   data_share_dataset_data_lake_gen2s = local.data_share_dataset_data_lake_gen2s
   depends_on                         = [module.data_shares]
 }
 
 module "data_share_dataset_kusto_clusters" {
-  source                            = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_kusto_cluster.git?ref=v5.0.0"
+  source                            = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_kusto_cluster.git?ref=v5.0.1"
   data_share_dataset_kusto_clusters = local.data_share_dataset_kusto_clusters
   depends_on                        = [module.data_shares]
 }
 
 module "data_share_dataset_kusto_databases" {
-  source                             = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_kusto_database.git?ref=v5.0.0"
+  source                             = "git::https://github.com/AeternaModules/azurerm_data_share_dataset_kusto_database.git?ref=v5.0.1"
   data_share_dataset_kusto_databases = local.data_share_dataset_kusto_databases
   depends_on                         = [module.data_shares]
 }
